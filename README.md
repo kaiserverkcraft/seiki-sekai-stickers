@@ -1,62 +1,35 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 <br />
 <p align="center">
   <a href="https://github.com/TheOriginalAyaka/sekai-stickers">
     <img src="https://cdn.discordapp.com/attachments/1045298870533509130/1069241800285499402/Emu_13_st.ayaka.one.png" alt="CSD Bot" width="200" height="200">
   </a>
-
-  <h2 align="center"><b>Project Sekai Stickers</b></h2>
-
-  <p align="center">Help is welcome, got some skill issues so dont judge me
-      <img src="https://cdn.discordapp.com/emojis/999338712255180921.webp?size=28&quality=lossless">
-    <br />
-    <br />
-    <a href="https://github.com/TheOriginalAyaka/sekai-stickers/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/TheOriginalAyaka/sekai-stickers/issues">Request Feature</a>
-  </p>
+  <h2 align="center"><b>Project Sekai 表情包生成器</b></h2>
+  <p align="center">PJSK表情包生成器，汉化处理并删除了广告和部分国内网络无法直连的功能。</p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
 
-## 🤖》Discord Bot
+## ✨》制作者
 
-### Sekai Stickers is also a discord bot, you can invite it [here](http://link.ayaka.one/stbot)
+- 原始贴纸来自 [Reddit](https://www.reddit.com/r/ProjectSekai/comments/x1h4v1/after_an_ungodly_amount_of_time_i_finally_made/)
 
-## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px"> 》Description
+- 剪切图像来自 [Modder4869](https://github.com/Modder4869)
 
-[![Readme Card](https://git-stats.ayaka.one/api/pin/?username=TheOriginalAyaka&repo=sekai-stickers&theme=tokyonight&show_owner=true&hide_border=true)](https://github.com/TheOriginalAyaka/sekai-stickers)
+- 原网站来自 [TheOriginalAyaka](https://github.com/TheOriginalAyaka)
 
-## <img src="https://cdn.discordapp.com/emojis/852881450667081728.gif" width="20px" height="20px"> 》Feature
-
-- [x] Wonderhoy!
-- [x] Download/Copy stickers
-- [x] Global stickers made counter
-- [ ] Social share button
-
-## ✨》Credits
-
-- Original stickers from [Reddit](https://www.reddit.com/r/ProjectSekai/comments/x1h4v1/after_an_ungodly_amount_of_time_i_finally_made/)
-
-- Cropped images by [Modder4869](https://github.com/Modder4869)
-
-- Website by [TheOriginalAyaka](https://github.com/TheOriginalAyaka)
+<!--
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> 》Screenshots
-
 <br />
 <p align="center">
   <img src="https://raw.githubusercontent.com/TheOriginalAyaka/sekai-stickers/main/public/screenshot.jpg">
 </p>
 
+-->
+
 ## 🔐 》License
 
-Distributed under the MIT License. See [`LICENSE`](https://github.com/TheOriginalAyaka/sekai-stickers/blob/main/LICENCE) for more information.
+使用MIT许可证， 点击[`LICENSE`](https://github.com/TheOriginalAyaka/sekai-stickers/blob/main/LICENCE)查看更多
 
 [contributors-shield]: https://img.shields.io/github/contributors/TheOriginalAyaka/sekai-stickers.svg?style=for-the-badge
 [contributors-url]: https://github.com/TheOriginalAyaka/sekai-stickers/graphs/contributors
