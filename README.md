@@ -17,6 +17,8 @@
 
 - 原网站来自 [TheOriginalAyaka](https://github.com/TheOriginalAyaka)
 
+初三学生完全不会React的说，按照自己的想法来了。（
+
 <!--
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> 》Screenshots
