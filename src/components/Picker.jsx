@@ -71,7 +71,7 @@ export default function Picker({ setCharacter }) {
         color="secondary"
         onClick={handleClick}
       >
-        Pick character
+        选择角色…
       </Button>
       <Popover
         id={id}
@@ -84,7 +84,7 @@ export default function Picker({ setCharacter }) {
         }}
         className="modal"
       >
-        <div className="picker-search">
+        {/* <div className="picker-search">
           <TextField
             label="Search character"
             size="small"
@@ -94,7 +94,7 @@ export default function Picker({ setCharacter }) {
             fullWidth
             onChange={(e) => setSearch(e.target.value)}
           />
-        </div>
+        </div> */}
         <div className="image-grid-wrapper">
           <ImageList
             sx={{

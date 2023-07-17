@@ -20,11 +20,11 @@ export default function Info({ open, handleClose, config }) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">Info</DialogTitle>
+        <DialogTitle id="alert-dialog-title">关于</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             <Typography variant="h6" component="h3">
-              This tool made possible by:
+              这个生成器的原作者：
             </Typography>
             <List>
               <ListItem
@@ -41,7 +41,7 @@ export default function Info({ open, handleClose, config }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Ayaka"
-                  secondary="for the original idea"
+                  secondary="原计划"
                 />
               </ListItem>
               <ListItem
@@ -58,7 +58,7 @@ export default function Info({ open, handleClose, config }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Modder4869"
-                  secondary="for the help with the code"
+                  secondary="代码援助"
                 />
               </ListItem>
               <ListItem
@@ -94,12 +94,30 @@ export default function Info({ open, handleClose, config }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Contributors"
-                  secondary="for the help with the code"
+                  secondary="代码援助"
+                />
+              </ListItem>
+              <ListItem
+                button
+                onClick={() =>
+                  (window.location.href =
+                    "https://github.com/xiao-zheng233")
+                }
+              >
+                <ListItemAvatar>
+                  <Avatar
+                    alt="xiao_zheng"
+                    src="https://avatars.githubusercontent.com/xiao-zheng233"
+                  />
+                </ListItemAvatar>
+                <ListItemText
+                  primary="xiao_zheng"
+                  secondary="汉化"
                 />
               </ListItem>
             </List>
             <Typography variant="h6" component="h3">
-              You can find the source code or contribute here:
+              你可以在这里找到源代码:
             </Typography>
             <List>
               <ListItem
@@ -115,11 +133,26 @@ export default function Info({ open, handleClose, config }) {
                     src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   />
                 </ListItemAvatar>
-                <ListItemText primary="GitHub" secondary="Source Code" />
+                <ListItemText primary="GitHub" secondary="原版" />
+              </ListItem>
+              <ListItem
+                button
+                onClick={() =>
+                  (window.location.href =
+                    "https://github.com/xiao-zheng233/seiki-sekai-stickers")
+                }
+              >
+                <ListItemAvatar>
+                  <Avatar
+                    alt="GitHub"
+                    src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                  />
+                </ListItemAvatar>
+                <ListItemText primary="GitHub" secondary="汉化版" />
               </ListItem>
             </List>
             <Typography variant="h6" component="h3">
-              The discord bot:
+              Discord 机器人：
             </Typography>
             <List>
               <ListItem
@@ -141,18 +174,18 @@ export default function Info({ open, handleClose, config }) {
                 />
               </ListItem>
             </List>
-            <Typography variant="h6" component="h3">
+            {/* <Typography variant="h6" component="h3">
               Total stickers made using the app:
               <br />
               {config?.global
                 ? config?.global.toLocaleString() + " Sticker"
                 : "not available"}
-            </Typography>
+            </Typography> */}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="secondary" autoFocus>
-            Close
+            关闭
           </Button>
         </DialogActions>
       </Dialog>

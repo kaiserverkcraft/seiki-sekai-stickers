@@ -8,8 +8,8 @@ import Button from "@mui/material/Button";
 import Switch from "@mui/material/Switch";
 import Picker from "./components/Picker";
 import Info from "./components/Info";
-import getConfiguration from "./utils/config";
-import log from "./utils/log";
+// import getConfiguration from "./utils/config";
+// import log from "./utils/log";
 import { bannerViewed, setBannerViewed } from "./utils/banner";
 
 const { ClipboardItem } = window;
@@ -20,17 +20,17 @@ function App() {
 
   // using this to trigger the useEffect because lazy to think of a better way
   const [rand, setRand] = useState(0);
-  useEffect(() => {
-    try {
-      const data = async () => {
-        const res = await getConfiguration();
-        setConfig(res);
-      };
-      data();
-    } catch (error) {
-      console.log(error);
-    }
-  }, [rand]);
+  // useEffect(() => {
+  //   try {
+  //     const data = async () => {
+  //       const res = await getConfiguration();
+  //       setConfig(res);
+  //     };
+  //     data();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }, [rand]);
 
   const [infoOpen, setInfoOpen] = useState(false);
 
@@ -134,7 +134,7 @@ function App() {
     link.download = `${characters[character].name}_st.ayaka.one.png`;
     link.href = canvas.toDataURL();
     link.click();
-    await log(characters[character].id, characters[character].name, "download");
+    //await log(characters[character].id, characters[character].name, "download");
     setRand(rand + 1);
   };
 
@@ -162,14 +162,14 @@ function App() {
         "image/png": b64toBlob(canvas.toDataURL().split(",")[1]),
       }),
     ]);
-    await log(characters[character].id, characters[character].name, "copy");
+    //await log(characters[character].id, characters[character].name, "copy");
     setRand(rand + 1);
   };
 
   return (
     <div className="App">
       <Info open={infoOpen} handleClose={handleClose} config={config} />
-      {!bannerView && (
+      {/* {!bannerView && (
         <div className="bannercontainer">
           <div className="bannermessage">
             <p>
@@ -202,7 +202,7 @@ function App() {
       )}
       <div className="counter">
         Total Stickers you made: {config?.total || "Not available"}
-      </div>
+      </div> */}
       <div className="container">
         <div className="vertical">
           <div className="canvas">
@@ -237,7 +237,9 @@ function App() {
           />
           <div className="settings">
             <div>
-              <label>Rotate: </label>
+              <label>
+                <nobr>旋转</nobr>
+              </label>
               <Slider
                 value={rotate}
                 onChange={(e, v) => setRotate(v)}
@@ -250,7 +252,7 @@ function App() {
             </div>
             <div>
               <label>
-                <nobr>Font size: </nobr>
+                <nobr>大小</nobr>
               </label>
               <Slider
                 value={fontSize}
@@ -264,7 +266,7 @@ function App() {
             </div>
             <div>
               <label>
-                <nobr>Spacing: </nobr>
+                <nobr>行间距</nobr>
               </label>
               <Slider
                 value={spaceSize}
@@ -277,7 +279,7 @@ function App() {
               />
             </div>
             <div>
-              <label>Curve (Beta): </label>
+              <label>弯曲(测试)</label>
               <Switch
                 checked={curve}
                 onChange={(e) => setCurve(e.target.checked)}
@@ -287,7 +289,7 @@ function App() {
           </div>
           <div className="text">
             <TextField
-              label="Text"
+              label="文本"
               size="small"
               color="secondary"
               value={text}
@@ -301,16 +303,16 @@ function App() {
           </div>
           <div className="buttons">
             <Button color="secondary" onClick={copy}>
-              copy
+              复制
             </Button>
             <Button color="secondary" onClick={download}>
-              download
+              下载
             </Button>
           </div>
         </div>
         <div className="footer">
           <Button color="secondary" onClick={handleClickOpen}>
-            Info
+            关于
           </Button>
         </div>
       </div>

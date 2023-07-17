@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2023-07-17 11:05:12
+ * @LastEditors: xiao_zheng
+ * @LastEditTime: 2023-07-17 12:30:27
+ * @FilePath: \seiki-sekai-stickers\README.md
+-->
 <br />
 <p align="center">
   <a href="https://github.com/TheOriginalAyaka/sekai-stickers">
@@ -16,6 +22,8 @@
 - 剪切图像来自 [Modder4869](https://github.com/Modder4869)
 
 - 原网站来自 [TheOriginalAyaka](https://github.com/TheOriginalAyaka)
+
+初三学生完全不会React的说，按照自己的想法来了。（
 
 <!--
 
