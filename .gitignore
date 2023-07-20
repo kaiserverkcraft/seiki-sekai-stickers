@@ -28,3 +28,5 @@ src/*.old
 
 #vscode local history
 .history
+
+.idea
