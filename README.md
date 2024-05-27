@@ -14,7 +14,7 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
-
+# 本fork仅保留 不处理任何奇奇怪怪的事情
 ## ✨》制作者
 
 - 原始贴纸来自 [Reddit](https://www.reddit.com/r/ProjectSekai/comments/x1h4v1/after_an_ungodly_amount_of_time_i_finally_made/)
@@ -23,7 +23,6 @@
 
 - 原网站来自 [TheOriginalAyaka](https://github.com/TheOriginalAyaka)
 
-初三学生完全不会React的说，按照自己的想法来了。（
 
 <!--
 
